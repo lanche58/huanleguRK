@@ -1,0 +1,21 @@
+<div class="ly-box">
+    <a class="close"></a>
+    <div class="atlas">
+        <div class="item"><img src="img/x_1.jpg" class="ig" alt=""></div>
+        <div class="item"><img src="img/x_2.jpg" class="ig" alt=""></div>
+        <div class="item"><img src="img/x_3.jpg" class="ig" alt=""></div>
+        <div class="item"><img src="img/x_4.jpg" class="ig" alt=""></div>
+    </div>
+    <script>
+        function lyBox(){
+            $('.atlas .item').css('height', w_height);
+        };
+        lyBox();
+        $(window).resize(function(){
+            lyBox();
+        });
+        $('.atlas').slick({
+            fade: true
+        });
+    </script>
+</div>
